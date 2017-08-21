@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.program.moonchildwizard" name="Moonchild Wizard" version="1.0.2" provider-name="Moonchild">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Moonchild Wizard</summary>
+    <description lang="en">Moonchild Wizard allows you to get access to the latest Moonchild Custom Builds.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+    <addon id="repository.moonchild" name="Moonchild Repository" version="1.0.0" provider-name="Moonchild">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Moonchild Repository">
+            <info compressed="false">http://raw.githubusercontent.com/moonchilddave/repository.moonchild/master/_repo/addons.xml</info>
+            <checksum>http://raw.githubusercontent.com/moonchilddave/repository.moonchild/master/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">http://raw.githubusercontent.com/moonchilddave/repository.moonchild/master/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Provides access to Moonchild Wizard.</summary>
+            <description>Provides access to Moonchild Wizard.</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+</addons>
